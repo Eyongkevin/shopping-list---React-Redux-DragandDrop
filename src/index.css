@@ -11,3 +11,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+h1{
+  text-align: center;
+}
+.container{
+  width: 1400px;
+  height: 500px;
+  margin: auto;
+  margin-top: 20px;
+}
+.shopping{
+  width: 700px;
+  height: 500px;
+  text-align: right;
+  float: right;
+}
+.phone {
+  display: inline-block;
+  padding: .5em;
+  margin: 0 1em 1em 0.25em;
+  border: 4px solid #d9d9d9;
+  background: #f7f7f7;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  line-height: 5em;
+  text-align: center;
+  color: #333;
+}
+.shopping-cart {
+  border: 5px dashed #d9d9d9;
+  border-radius: 10px;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.shoppingDetails{
+  width: 700px;
+  height: 500px;
+  text-align: right;
+  float: left; 
+}

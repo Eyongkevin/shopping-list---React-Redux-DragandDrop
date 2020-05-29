@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
+
+import '../index.css'
 import { _getPhones } from '../utils/_DATA'
 import { receivePhones } from '../actions/phones'
+import Container from './container'
 
 
 class App extends Component {
@@ -15,14 +18,7 @@ class App extends Component {
     const { phones } = this.props
   
     return (
-      <div>
-        {Object.keys(phones).map((phone) =>(
-          <p key={phone}>
-            {phones[phone].brand}
-          </p>
-        ))}
-      </div>
-      
+      <Container phones={phones} />
     );
   }
 }
