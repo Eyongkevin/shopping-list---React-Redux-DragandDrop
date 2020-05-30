@@ -14,41 +14,76 @@ code {
 h1{
   text-align: center;
 }
+.main-header{
+  background-color: rgba(185, 10, 10, 0.219);
+}
+.title{
+  font-size: 30px !important;
+}
 .container{
-  width: 1400px;
-  height: 500px;
+  width: 1500px !important;
+  height: 850px;
   margin: auto;
   margin-top: 20px;
+  background-color: antiquewhite
 }
-.shopping{
+.brand-heading{
   width: 700px;
-  height: 500px;
-  text-align: right;
-  float: right;
-}
-.phone {
-  display: inline-block;
-  padding: .5em;
-  margin: 0 1em 1em 0.25em;
-  border: 4px solid #d9d9d9;
-  background: #f7f7f7;
-  height: 5rem;
-  width: 5rem;
-  border-radius: 5rem;
-  cursor: pointer;
-  line-height: 5em;
+  height: 30px;
+  background-color: #150550;
+  color: white;
   text-align: center;
-  color: #333;
+  float: right;
+  margin-top: 10%;
+  margin-right: 50px;
 }
-.shopping-cart {
+.shopping-list{
+  width: 700px;
+  height: 250px;
+  text-align: center;
+  float: right;
+  margin-top: 10%;
+  margin-right: 50px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.shopping-cart{
+  width: 700px;
+  height: 350px;
+  margin-top: 10px;
+  margin-right: 50px;
+  text-align: center;
+  float: right;
   border: 5px dashed #d9d9d9;
   border-radius: 10px;
   padding: 5rem 2rem;
-  text-align: center;
+  background-color: rgba(49, 209, 9, 0.137);
 }
-.shoppingDetails{
-  width: 700px;
-  height: 500px;
-  text-align: right;
-  float: left; 
+.phone{
+  display: inline-block !important;
+  width: 10rem !important;
+  margin: 0 1em 1em 0.25em !important;
+  padding: .5em !important;
+  cursor: pointer;
+  background: #f7f7f7 !important;
+  
 }
+.mycart-header{
+  margin-top: 20px !important;
+  color: rgb(238, 248, 240); 
+  background-color: #150550;
+}
+.my-cart{
+  text-align: left;
+  margin-top: 100px;
+  border: 5px solid #d9d9d9;
+}
+.cart-item{
+  float: right;
+}
+.meta{
+  font-size: 8px !important;
+}
+
+
