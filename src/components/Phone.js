@@ -1,23 +1,26 @@
 import React, { Component } from 'react'
 import { DragSource } from 'react-dnd';
+import { connect } from 'react-redux'
 
 import { ItemTypes } from './Constants';
+import { moveIncart } from '../actions/phones'
 
 // phone DnD spec
 const phoneSpec = {
     beginDrag(props){
-        console.log("begin drag")
         return{
-            name: props.brand
+            name: props.brand,
+            id: props.id
             
         }
     },
     endDrag(props, monitor, component){
         if (monitor.didDrop()){
             const dragItem = monitor.getItem();
-            const dropResult = monitor.getDropResult();
-            // Move action goes here
+            const dropResult = monitor.getDropResult();           
             console.log("You dropped ", dragItem.name, ' into '+ dropResult.name)
+             // Move action goes here
+            props.dispatch(moveIncart(dragItem.id))
         }else{
             return;
         }
@@ -60,8 +63,5 @@ class Phone extends Component{
     }
 }
 
-export default DragSource(ItemTypes.PHONE, phoneSpec, collect)(Phone);
-
-
-
+export default connect()(DragSource(ItemTypes.PHONE, phoneSpec, collect)(Phone));
 

@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { DropTarget } from 'react-dnd'
 
-import Phone from './Phone'
 import { ItemTypes } from './Constants'
+import DisplayPhone from './DisplayPhone'
 
 // DnD Spec
 const ShoppingCartSpec = {
@@ -21,6 +21,7 @@ let collect = ( connect, monitor )=>{
 
 class ShoppingCart extends Component{
     render(){
+        const { inCart_phones } = this.props
         const { canDrop, isOver, connectDropTarget } = this.props;
         const  isActive = canDrop && isOver;
 
@@ -33,12 +34,17 @@ class ShoppingCart extends Component{
         const style={
             backgroundColor: backgroundColor
         };
+
         return connectDropTarget(
             <div className="shopping-cart" style={ style } >
-                {
-                    isActive
+                { !inCart_phones.length  &&
+                    (isActive
                     ? 'Humm, phone!'
-                    : 'Drag here to order!'
+                    : 'Drag here to order!')
+                }
+                { inCart_phones.length
+                ? <DisplayPhone displayPhones = {inCart_phones} />
+                : null
                 }
             </div>
         )

@@ -13,11 +13,11 @@ let phones = {
     },
     Hauwei:{
         brand: "Hauwei",
-        inCart: "true"
+        inCart: "false"
     },
     HTC:{
         brand: "HTC",
-        inCart: "true"
+        inCart: "false"
     }
 }
 

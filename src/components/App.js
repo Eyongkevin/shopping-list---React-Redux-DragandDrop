@@ -16,18 +16,12 @@ class App extends Component {
       })
   }
   render(){
-    const { phones } = this.props
-  
+ 
     return (
-      <Container phones={phones} />
+      <Container />
     );
   }
 }
 
-function mapStateToProps({phones}){
-  return{
-    phones
-  }
-}
 
-export default connect(mapStateToProps)(App);
+export default connect()(App);
