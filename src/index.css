@@ -86,4 +86,9 @@ h1{
   font-size: 8px !important;
 }
 
+/* Drag and Drop */
+
+.drag{
+  background-color: lightblue !important;
+}
 
