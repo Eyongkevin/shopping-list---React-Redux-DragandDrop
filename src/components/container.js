@@ -21,9 +21,10 @@ class Container extends Component {
                 </div>
                 <div class="ui grid">
                 <h1 className="mycart-header">My cart</h1>
-                    <div class="left floated five wide column my-cart">                       
-                        <MyCart />
-                    </div>
+                <div class="left floated five wide column my-cart"> 
+                <a class="ui red ribbon label">{inCart_phones.length} Phone(s)</a>                      
+                    <MyCart inCart_phones = {inCart_phones} />
+                </div>
                 <div class="right floated five wide column">
                     <DndProvider backend={ HTML5Backend } >
                         <div class="ui row">
