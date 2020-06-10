@@ -12,9 +12,9 @@ Our `My Cart` section displays a placeholder message to indicate that no phone i
 
 ![](./public/images/cartEmpty.png)
 
-After dragging and dropping phone items into the target space, we have the following UI
+This is what happens to our `My Cart` when we drag and drop phone items into the target space.
 
-![](./public/images/phonesInCart.png)
+![](./public/images/phonesInCart.gif)
 
 *NB//* The UI is not mobile responsive.
 
