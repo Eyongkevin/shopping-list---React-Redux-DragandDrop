@@ -2,19 +2,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Shopping Cart with React, Redux and React DnD
 This is a mini project that teaches you how to use React, Redux, and React DnD to build a shopping cart. In this branch, we shall:
-- Code a `My Cart` section that will display phones as they are dragged and dropped in the target space.
+- Use [react-transition-group](https://github.com/reactjs/react-transition-group/tree/v1-stable) to improve the feel of the app by adding transitions that will lead to better user experience. 
 
 
 ## What the UI looks like
 The UI is not that fancy. What I focus on for this part of the tutorial is the elements described above. 
 
-Our `My Cart` section displays a placeholder message to indicate that no phone item have been added to the cart yet. Hence, we see that there is no phone in the target space
+We added transitions in the various sections
+- In the `My Cart` section which displays phones found in the target space
+- In the `Phone Brands` section which displays all phones not added in the phone target space
 
-![](./public/images/cartEmpty.png)
+![](./public/images/transition.gif)
 
-This is what happens to our `My Cart` when we drag and drop phone items into the target space.
-
-![](./public/images/phonesInCart.gif)
 
 *NB//* The UI is not mobile responsive.
 

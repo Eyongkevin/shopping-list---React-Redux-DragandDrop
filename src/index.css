@@ -101,3 +101,30 @@ h1{
 .placeholder{
   text-align: center;
 }
+
+/* Transition */
+.transPhones-appear {
+  opacity: 0.01;
+}
+
+.transPhones-appear.transPhones-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+.transPhones-enter {
+  opacity: 0.01;
+}
+
+.transPhones-enter.transPhones-enter-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+.transPhones-leave {
+  opacity: 1;
+}
+
+.transPhones-leave.transPhones-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
