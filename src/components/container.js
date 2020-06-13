@@ -16,7 +16,7 @@ class Container extends Component {
                 <div className="main-header">
                     <h2 class="ui icon center aligned header">
                         <i aria-hidden="true" class="mobile circular icon"></i>
-                        <div class="content title">Phone Shope</div>
+                        <div class="content title">Phone Shop</div>
                     </h2>
                 </div>
                 <div class="ui grid">
@@ -50,11 +50,10 @@ function mapStateToProps({phones}){
     const outCart_phones = Object.keys(phones).filter((phone) => !inCart_phones.includes(phone))
 
     return{
-        inCart_phones,
+        inCart_phones: inCart_phones.sort((a,b) => phones[b].timestamp - phones[a].timestamp),
         outCart_phones,
     }
   }
 
 export default connect(mapStateToProps)(Container)
-
 

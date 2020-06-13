@@ -9,8 +9,10 @@ export function receivePhones(phones){
 }
 
 export function moveIncart(phone_id){
+    const timestamp = Date.now()
     return{
         type: MOVE_INCART,
-        id: phone_id
+        id: phone_id,
+        timestamp
     }
 }

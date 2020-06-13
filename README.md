@@ -1,18 +1,20 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Shopping Cart with React, Redux and React DnD
+# Shopping Cart with React, Redux and React DnD 
+## Finishing touches
+
+![](./public/images/finish.png)
+
 This is a mini project that teaches you how to use React, Redux, and React DnD to build a shopping cart. In this branch, we shall:
-- Use [react-transition-group](https://github.com/reactjs/react-transition-group/tree/v1-stable) to improve the feel of the app by adding transitions that will lead to better user experience. 
+- replace all the placeholders and Modify the initial data to contain the right information and sort by timestamp
 
 
 ## What the UI looks like
 The UI is not that fancy. What I focus on for this part of the tutorial is the elements described above. 
 
-We added transitions in the various sections
-- In the `My Cart` section which displays phones found in the target space
-- In the `Phone Brands` section which displays all phones not added in the phone target space
+We replaced the placeholder phone image we had through out the rest of the tutorials with real images of each phone brand, then we modified the initial data with the phone details like price, RAM. We later sort items in our `My cart` section in order of the time when it was placed in the target space.
 
-![](./public/images/transition.gif)
+![](./public/images/finish.gif)
 
 
 *NB//* The UI is not mobile responsive.

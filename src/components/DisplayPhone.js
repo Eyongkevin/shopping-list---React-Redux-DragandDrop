@@ -6,7 +6,7 @@ import Phone from './Phone'
 
 class DisplayPhone extends Component {
     render(){
-        const { phones, displayPhones } = this.props
+        const { displayPhones } = this.props
         return(
             <div>
                 <CSSTransitionGroup
@@ -18,7 +18,7 @@ class DisplayPhone extends Component {
                     
                     {displayPhones
                         .map((phone) =>(
-                            <Phone key={phone} id={phone} brand={phones[phone].brand} />
+                            <Phone key={phone} id={phone} />
                             
                     ))}
                 </CSSTransitionGroup>
@@ -27,11 +27,5 @@ class DisplayPhone extends Component {
     }
 }
 
-function mapStateToProps({phones}){
 
-    return{
-        phones,
-    }
-  }
-
-export default connect(mapStateToProps)(DisplayPhone);
+export default connect()(DisplayPhone);

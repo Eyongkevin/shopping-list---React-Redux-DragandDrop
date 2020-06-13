@@ -3,6 +3,11 @@ import { connect } from 'react-redux'
 import { CSSTransitionGroup } from 'react-transition-group'
 
 class MyCart extends Component {
+    formatDate (timestamp) {
+        const d = new Date(timestamp)
+        const time = d.toLocaleTimeString('en-US')
+        return time.substr(0, 5) + time.slice(-2) + ' | ' + d.toLocaleDateString()
+      }
     render(){
         const { inCart_phones, phones } = this.props;
         
@@ -21,14 +26,14 @@ class MyCart extends Component {
                             <div class="ui card centered">
                                 <div class="content">
                                 <img
-                                    src="/images/phone.jpg"
+                                    src={`/images/${phones[phone].brand}.jpg`} 
                                     class="ui mini right floated image"
                                 />
                                 <div class="header">{phones[phone].brand}</div>
-                                <div class="meta">$ 80</div>
-                                <div class="meta price">12 minutes</div>
+                                <div class="meta">$ {phones[phone].price}</div>
+                                <div class="meta price">{this.formatDate(phones[phone].timestamp)}</div>
                                 <div class="description">
-                                    8G RAM, 16G memory
+                                {phones[phone].capacity}
                                 </div>
                                 </div>
                                 <div class="extra content">
@@ -55,3 +60,4 @@ function mapStateToProps({phones}){
   }
 
 export default connect(mapStateToProps)(MyCart);
+
