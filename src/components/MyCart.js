@@ -14,7 +14,7 @@ class MyCart extends Component {
                         />
                         <div class="header">Test_Phone</div>
                         <div class="meta">$ 80</div>
-                        <div class="meta price">12 minutes</div>
+                        <div class="meta">12 minutes</div>
                         <div class="description">
                             8G RAM, 16G memory
                         </div>
