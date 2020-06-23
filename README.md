@@ -7,6 +7,8 @@ This is the first part of our journey to creating a Shopping cart. This first pa
 - React components, reducers and actions
 - Redux store, connect, Provider and mapStateToProps
 
+## How I Did It!
+You can find a walkthrough of how I build this part from scratch on [my blog](https://itnext.io/build-a-shopping-cart-with-react-redux-and-react-dnd-part-1-2433558c3f38)
 
 ## Available Scripts
 
