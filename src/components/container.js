@@ -12,24 +12,24 @@ class Container extends Component {
     render(){
         const { inCart_phones, outCart_phones } = this.props
         return(
-            <div class="ui container">
+            <div className="ui container">
                 <div className="main-header">
-                    <h2 class="ui icon center aligned header">
-                        <i aria-hidden="true" class="mobile circular icon"></i>
-                        <div class="content title">Phone Shope</div>
+                    <h2 className="ui icon center aligned header">
+                        <i aria-hidden="true" className="mobile circular icon"></i>
+                        <div className="content title">Phone Shope</div>
                     </h2>
                 </div>
-                <div class="ui grid">
+                <div className="ui grid">
                 <h1 className="mycart-header">My cart</h1>
-                    <div class="left floated five wide column my-cart">                       
+                    <div className="left floated five wide column my-cart">                       
                         <MyCart />
                     </div>
-                <div class="right floated five wide column">
+                <div className="right floated five wide column">
                     <DndProvider backend={ HTML5Backend } >
-                        <div class="ui row">
-                            <h3 class="brand-heading">Phone Brands</h3>
+                        <div className="ui row">
+                            <h3 className="brand-heading">Phone Brands</h3>
                         </div>
-                        <div class="ui row">
+                        <div className="ui row">
                             <div className="shopping-list">
                                 <DisplayPhone displayPhones = {outCart_phones} />
                             </div>
